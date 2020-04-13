@@ -14,7 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/yugako/fullstack-js-start.git"
   },
-  "keywords": ["MERN", "Node", "Fullstack", "Boilerplate"],
+  "keywords": [
+    "MERN",
+    "Node",
+    "Fullstack",
+    "Boilerplate"
+  ],
   "author": "George Hasiuk",
   "license": "ISC",
   "bugs": {
