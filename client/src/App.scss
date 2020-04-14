@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+  &-logo {
+    pointer-events: none;
+  }
+
+  &-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  &-links {
+    display: flex;
+  }
+  &-link {
+    color: #61dafb;
+    display: block;
+    margin: 0px 10px;
+    text-decoration: none;
+    position: relative;
+    &.mongo {
+      color: green;
+      &::before {
+        background-color: green;
+      }
+    }
+    &.express {
+      color: rgb(184, 30, 30);
+      &::before {
+        background-color: rgb(184, 30, 30);
+      }
+    }
+    &.node {
+      color: lime;
+      &::before {
+        background-color: lime;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      bottom: -10px;
+      left: 0;
+      height: 10px;
+      background-color: #61dafb;
+      transition: all 0.3s;
+      border-radius: 50%;
+    }
+    &:hover {
+      z-index: 3;
+      &::before {
+        width: 100%;
+        border-radius: 0%;
+        transition: all 0.3s;
+        bottom: 0px;
+        z-index: 1;
+        opacity: 0.3;
+      }
+    }
+  }
+}
